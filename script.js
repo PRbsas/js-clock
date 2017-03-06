@@ -4,11 +4,12 @@ function displayTime() {
   var minutes = currentTime.getMinutes();
   var seconds = currentTime.getSeconds();
 
-  var meridiem = 'pm';
+  var meridiem = 'am';
   if(hours > 12) {
     hours = hours - 12;
-    meridiem = 'am';
+    meridiem = 'pm';
   }
+
   if(hours === 0) {
     hours = 12;
   }
